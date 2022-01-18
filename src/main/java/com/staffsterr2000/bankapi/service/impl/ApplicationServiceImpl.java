@@ -1,9 +1,9 @@
 package com.staffsterr2000.bankapi.service.impl;
 
 import com.staffsterr2000.bankapi.exception.UnsuccessfulOperationException;
-import com.staffsterr2000.bankapi.model.Application;
-import com.staffsterr2000.bankapi.model.Response;
-import com.staffsterr2000.bankapi.model.enumeration.Status;
+import com.staffsterr2000.bankapi.model.entity.Application;
+import com.staffsterr2000.bankapi.model.entity.Response;
+import com.staffsterr2000.bankapi.model.enumeration.OperationStatus;
 import com.staffsterr2000.bankapi.service.ApplicationService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -23,7 +23,7 @@ public class ApplicationServiceImpl implements ApplicationService {
         if (!isOperationSuccessful)
             throw new UnsuccessfulOperationException();
 
-        return Response.builder().id(UUID.randomUUID()).status(Status.SUCCESS).build();
+        return Response.builder().id(UUID.randomUUID()).status(OperationStatus.SUCCESS).build();
     }
 
 }

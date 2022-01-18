@@ -1,5 +1,5 @@
 package com.staffsterr2000.bankapi.model.enumeration;
 
-public enum Status {
+public enum OperationStatus {
     SUCCESS, FAILED
 }

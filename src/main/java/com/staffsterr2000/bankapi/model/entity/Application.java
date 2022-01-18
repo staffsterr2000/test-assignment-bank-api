@@ -1,4 +1,4 @@
-package com.staffsterr2000.bankapi.model;
+package com.staffsterr2000.bankapi.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

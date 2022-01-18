@@ -1,7 +1,7 @@
 package com.staffsterr2000.bankapi.controller;
 
-import com.staffsterr2000.bankapi.model.Application;
-import com.staffsterr2000.bankapi.model.Response;
+import com.staffsterr2000.bankapi.model.entity.Application;
+import com.staffsterr2000.bankapi.model.entity.Response;
 import com.staffsterr2000.bankapi.service.ApplicationService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;

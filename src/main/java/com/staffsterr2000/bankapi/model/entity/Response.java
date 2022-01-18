@@ -1,7 +1,7 @@
-package com.staffsterr2000.bankapi.model;
+package com.staffsterr2000.bankapi.model.entity;
 
 
-import com.staffsterr2000.bankapi.model.enumeration.Status;
+import com.staffsterr2000.bankapi.model.enumeration.OperationStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,6 +16,7 @@ import java.util.UUID;
 public class Response {
 
     private UUID id;
-    private Status status;
+
+    private OperationStatus status;
 
 }
