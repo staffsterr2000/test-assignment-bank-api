@@ -17,7 +17,7 @@ public class ApplicationServiceImpl implements ApplicationService {
 
     @Override
     public Response save(Application application) {
-        log.info(application.toString());
+        log.info("Application: " + application);
 
         boolean isOperationSuccessful = new Random().nextBoolean();
         if (!isOperationSuccessful)

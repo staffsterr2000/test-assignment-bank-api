@@ -50,15 +50,11 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected UserDetailsService userDetailsService() {
         UserDetails admin = User.builder()
-                .username("admin")
-                .password(passwordEncoder.encode("password"))
+                .username("very_surprising_username_that_nobody_knows")
+                .password(passwordEncoder.encode("very_strong_password_nobody_can_hack"))
                 .authorities("ROLE_ADMIN").build();
-        UserDetails user = User.builder()
-                .username("user")
-                .password(passwordEncoder.encode("password"))
-                .authorities("ROLE_USER").build();
 
-        return new InMemoryUserDetailsManager(admin, user);
+        return new InMemoryUserDetailsManager(admin);
     }
 
 }
