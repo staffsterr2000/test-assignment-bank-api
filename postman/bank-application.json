@@ -5,7 +5,7 @@
             "surname": "Stas",
             "email": "stas@stas.com",
             "isEmployed": true,
-            "employedSince": "2021-12-10",
+            "employedSince": "12/10/2021",
             "monthlyIncome": 20000,
             "address": "street 21"
         },
